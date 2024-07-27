@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- GitHub (EverestOS) -->
+  <remote  name="everest"
+           fetch="https://github.com/ProjectEverest/"
+           revision="qpr3" />
+
+  <!-- Gitlab (EverestOS) -->
+  <remote  name="everest-gitlab"
+           fetch="https://gitlab.com/everestos/"
+           revision="qpr3" />
+
+  <!-- Gitea (EverestOS) -->
+  <remote  name="everest-gitea"
+           fetch="https://gitea.com/ProjectEverest/"
+           revision="qpr3" />
+
+  <!-- GitHub (Crazy) -->
+  <remote  name="crazy"
+           fetch="https://github.com/crazy-stuffs/"
+           revision="14" />
+
+  <!-- Rootdir -->
+  <project path="manifest" name="manifest" remote="crazy" />
+  <project path="everest-maintainers" name="everest-maintainers" remote="everest" />
+
+  <!-- Build -->
+  <project path="build/make" name="build" groups="pdk,sysui-studio" remote="crazy" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="crazy" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Bootable -->
+  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="crazy" />
+
+  <!-- Device -->
+  <project path="device/lineage/sepolicy" name="device_everest_sepolicy" remote="crazy" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="crazy" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="crazy" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="everest" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk-cw-fs,pdk-fs" remote="crazy" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Backgrounds" name="packages_apps_Backgrounds" remote="crazy" />
+  <project path="packages/apps/BaseCamp" name="packages_apps_BaseCamp" remote="crazy" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="everest" />
+  <project path="packages/apps/LineageParts" name="packages_apps_LineageParts" remote="crazy" />
+  <project path="packages/apps/PocketMode" name="packages_apps_PocketMode" remote="everest" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="crazy" />
+  <project path="packages/apps/Updater" name="packages_apps_Updater" remote="everest" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk" remote="crazy" />
+  <project path="packages/overlays/Themes" name="packages_overlays_Themes" remote="crazy" />
+
+  <!-- SDK -->
+  <project path="lineage-sdk" name="lineage-sdk" remote="crazy" />
+
+  <!-- System -->
+  <project path="system/core" name="system_core" groups="pdk" remote="crazy" />
+
+  <!-- Vendor -->
+  <project path="vendor/certification" name="vendor_certification" remote="everest" />
+  <project path="vendor/lineage" name="vendor_everest" remote="crazy" />
+  <project path="vendor/gms" name="vendor_gms" remote="everest-gitea" clone-depth="1" />
+  <project path="vendor/pixel-style" name="vendor_pixel-style" remote="crazy" />
+</manifest>
