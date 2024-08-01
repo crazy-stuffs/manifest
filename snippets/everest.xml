@@ -46,6 +46,9 @@
   <!-- Device -->
   <project path="device/lineage/sepolicy" name="device_everest_sepolicy" remote="crazy" />
 
+  <!-- Fading Layout -->
+  <project path="external/FadingEdgeLayout" name="external_FadingEdgeLayout" remote="everest" />
+
   <!-- Frameworks -->
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="crazy" />
   <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="crazy" />
@@ -55,12 +58,15 @@
   <!-- Packages -->
   <project path="packages/apps/Backgrounds" name="packages_apps_Backgrounds" remote="crazy" />
   <project path="packages/apps/BaseCamp" name="packages_apps_BaseCamp" remote="crazy" />
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="crazy" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="everest" />
   <project path="packages/apps/LineageParts" name="packages_apps_LineageParts" remote="crazy" />
+  <project path="packages/apps/OmniStyles" name="packages_apps_OmniStyle" remote="everest" />
+  <project path="packages/apps/Pif" name="packages_apps_Pif" remote="everest" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="crazy" />
   <project path="packages/apps/Updater" name="packages_apps_Updater" remote="everest" />
-  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk" remote="crazy" />
   <project path="packages/overlays/Themes" name="packages_overlays_Themes" remote="crazy" />
+  <project path="packages/services/OmniJaws" name="android_packages_services_OmniJaws" remote="everest" />
 
   <!-- SDK -->
   <project path="lineage-sdk" name="lineage-sdk" remote="crazy" />
