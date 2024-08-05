@@ -54,11 +54,11 @@
 
   <!-- Packages -->
   <project path="packages/apps/Backgrounds" name="packages_apps_Backgrounds" remote="crazy" />
-  <project path="packages/apps/BaseCamp" name="packages_apps_BaseCamp" remote="crazy" />
+  <project path="packages/apps/BaseCamp" name="packages_apps_BaseCamp" remote="crazy" revision="new" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="everest" />
   <project path="packages/apps/LineageParts" name="packages_apps_LineageParts" remote="crazy" />
   <project path="packages/apps/PocketMode" name="packages_apps_PocketMode" remote="everest" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="crazy" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="crazy" revision="new" />
   <project path="packages/apps/Updater" name="packages_apps_Updater" remote="everest" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk" remote="crazy" />
   <project path="packages/overlays/Themes" name="packages_overlays_Themes" remote="crazy" />
