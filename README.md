@@ -14,7 +14,7 @@ Prior to building, you will need basic knowledge of [Git](https://www.atlassian.
 ### Initialize local repository
 
 ```
-repo init -u https://github.com/crazy-stuffs/manifest -b 14 --git-lfs
+repo init -u https://github.com/crazy-stuffs/manifest -b aug --git-lfs
 ```
 
 ### Sync up 
