@@ -59,7 +59,7 @@
   <project path="packages/apps/Backgrounds" name="packages_apps_Backgrounds" remote="crazy" />
   <project path="packages/apps/BaseCamp" name="packages_apps_BaseCamp" remote="crazy" revision="aug" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="crazy" />
-  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="everest" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="crazy" />
   <project path="packages/apps/LineageParts" name="packages_apps_LineageParts" remote="crazy" />
   <project path="packages/apps/OmniStyles" name="packages_apps_OmniStyle" remote="everest" />
   <project path="packages/apps/Pif" name="packages_apps_Pif" remote="everest" />
